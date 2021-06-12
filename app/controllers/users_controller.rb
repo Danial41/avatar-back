@@ -5,7 +5,8 @@ class UsersController < ApplicationController
         @user = User.create(user_params)
         if @user.valid?
           # token = encode_token({ user_id: @user.id })
-          render json: { user: @user}
+          user_serializer = parse_json @user
+          render json: { data: user_serializer}
         else
           render json: { error: @user.errors.full_messages }
         end

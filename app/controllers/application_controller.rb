@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  # include SerializableResource
+  include SerializableResource
   # before_action :authorized
 
   # def encode_token(payload)
