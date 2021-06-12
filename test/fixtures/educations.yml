@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school: MyString
+  specialty: MyString
+  grade: MyString
+  start_date: MyString
+  end_date: MyString
+
+two:
+  school: MyString
+  specialty: MyString
+  grade: MyString
+  start_date: MyString
+  end_date: MyString
