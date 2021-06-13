@@ -3,7 +3,7 @@ class NewsController < ApplicationController
     def index
         news = News.all
 
-        if news.valid?
+        if news
             news_serializer = parse_json news
             render json: {success: true, data: news}
         else
