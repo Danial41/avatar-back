@@ -65,7 +65,7 @@
 * [скачать](https://github.com/Danial41/avatar-back) или клонировать репозитторий:
   - Клонировать с SSH
   ```
-    git@github.com:Danial41/avatar-front.git
+    git@github.com:Danial41/avatar-back.git
   ```
   - Клонировать с HTTPS
   ```
@@ -74,19 +74,13 @@
 
 * В папке с проектом нужно ввести команды:
 
-  - `$ npm install` - устанавливает зависимости
+  - `$ bundle install` - устанавливает зависимости
 
-  - `$ npm start` - запускает приложение в режиме разработки:
+  - `$ rails` - запускает приложение в режиме разработки:
     - Откройте [http://localhost:3000](http://localhost:3000).
-    - Страница перезагружается автоматически после каждого сохранения.
-
-  - `$ npm build`
-    - Собирает все файлы в папку для размещения.
 
 ## Демо
-Проект размещён на сервисе Netlify.
-
-[Here's the list of all endpoints - ](https://calorifer.herokuapp.com/) :point_left:
+Проект размещён на сервисе Heroku.
 
 <!-- CONTACT -->
 ## Contributors
