@@ -1,4 +1,10 @@
 class ProjectsController < ApplicationController
+    def index
+        projects = Project.last(30)
+        project_serializer = parse_json projects
+        render json: {success: true, data: project_serializer}
+    end
+
     def create
         user = User.find(project_params[:user])
         project_params[:user] = user
