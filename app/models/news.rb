@@ -1,0 +1,11 @@
+class News < ApplicationRecord
+  belongs_to :user
+
+  has_one_attached :image
+
+  validates :image, {
+    presence: true
+  }
+
+  validates :title, presence: true, length: { in: 3..50 }
+end
