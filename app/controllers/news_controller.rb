@@ -5,7 +5,7 @@ class NewsController < ApplicationController
 
         if news
             news_serializer = parse_json news
-            render json: {success: true, data: news}
+            render json: {success: true, data: news_serializer}
         else
             render json: {success: false, error: news.error.full_messages}
         end
