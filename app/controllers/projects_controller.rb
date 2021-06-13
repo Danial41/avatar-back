@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
     def create
         user = User.find(project_params[:user])
         project_params[:user] = user
-        project = Project.new({option: project_params[:option], user: user, name: project_params[:name], image: project_params[:image]})
+        project = Project.new({option: project_params[:option], user: user, name: project_params[:name], image: project_params[:image], description: project_params[:description]})
         if project.save
             project_serializer = parse_json project
             render json: {success: true, data: project_serializer}
